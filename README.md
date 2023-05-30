@@ -30,8 +30,8 @@ pacman -Syy
 ## Install git
 pacman -S git
 
-## Maybe it's required to install the current archlinux keyring
-## if the installation of git fails.
+### Maybe it's required to install the current archlinux keyring
+### if the installation of git fails.
 pacman -S archlinux-keyring
 pacman -Syy
 
