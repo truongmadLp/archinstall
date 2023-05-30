@@ -33,7 +33,7 @@ mkfs.ext4 -f /dev/$sda2
 # mkfs.btrfs -f /dev/$sda2
 
 # ------------------------------------------------------
-# Mount points for btrfs
+# Mount points for btrfs/ext4
 # ------------------------------------------------------
 mount /dev/$sda2 /mnt
 #btrfs su cr /mnt/@
@@ -56,7 +56,7 @@ mount /dev/$sda1 /mnt/boot/efi
 # ------------------------------------------------------
 # Install base packages
 # ------------------------------------------------------
-pacstrap -K /mnt base base-devel git linux linux-firmware sof-firmware vim openssh reflector rsync amd-ucode intel-ucode nano vim
+pacstrap -K /mnt base base-devel git linux linux-firmware sof-firmware openssh reflector rsync amd-ucode intel-ucode nano vim
 
 # ------------------------------------------------------
 # Generate fstab

@@ -83,6 +83,7 @@ systemctl enable reflector.timer    #System update
 systemctl enable fstrim.timer       #SSD trim
 systemctl enable firewalld          #Firewall
 systemctl enable acpid              #Power management events for laptop
+systemctl enable lightdm            #Display manager
 
 # ------------------------------------------------------
 # Grub installation
