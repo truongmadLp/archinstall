@@ -18,11 +18,11 @@ lsblk
 ## Create partitions
 cfdisk /dev/sda
 
-## Partition 1: +512M ef00 (for EFI)
-## Partition 2: Available space 8300 (for Linux filesystem)
-## (Optional Partition 3 for Virtual Machines)
-## Swap lowkey useless
-## Write w, Confirm Y
+### Partition 1: +512M ef00 (for EFI)
+### Partition 2: Available space 8300 (for Linux filesystem)
+### (Optional Partition 3 for Virtual Machines)
+### Swap lowkey useless
+### Write w, Confirm Y
 
 ## Sync package
 pacman -Syy
