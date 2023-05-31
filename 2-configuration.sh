@@ -88,7 +88,8 @@ systemctl enable lightdm            #Display manager
 # ------------------------------------------------------
 # Grub installation
 # ------------------------------------------------------
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
+#grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
+grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 
 # ------------------------------------------------------
@@ -130,4 +131,5 @@ echo "                         "
 echo ""
 echo ""
 echo "Please exit & shutdown (shutdown -h now), remove the installation media and start again."
+echo "Or reboot (reboot) and remove the installation media after the reboot."
 echo "Important: Activate WIFI after restart with nmtui."
