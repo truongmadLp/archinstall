@@ -29,7 +29,7 @@ timedatectl set-ntp true
 # Format partitions
 # ------------------------------------------------------
 mkfs.fat -F 32 /dev/$sda1;
-mkfs.ext4 -f /dev/$sda2
+mkfs.ext4 /dev/$sda2
 # mkfs.btrfs -f /dev/$sda2
 
 # ------------------------------------------------------
