@@ -18,7 +18,7 @@ lsblk
 ## Create partitions
 cfdisk /dev/sda
 
-### Partition 1: +512M ef00 (for EFI)
+### Partition 1: +512M ef00 (for EFI), 128M is enough for grub usually
 ### Partition 2: Available space 8300 (for Linux filesystem)
 ### (Optional Partition 3 for Virtual Machines)
 ### Swap lowkey useless
@@ -38,6 +38,10 @@ pacman -Syy
 ## Clone Installation
 git clone https://github.com/truongmadLp/archinstall.git
 cd archinstall
+chmod +x 1-install.sh 2-configuration.sh 3-yay.sh
 
+
+### In case of error: Partition / too full
+mount -o remount,size=1G /run/archiso/cowspace
 ## Start the script
 ./1-install.sh

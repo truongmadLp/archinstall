@@ -108,7 +108,7 @@ echo "Before: #%wheel ALL=(ALL:ALL) ALL"
 echo "After:  %wheel ALL=(ALL:ALL) ALL"
 echo ""
 read -p "Open sudoers now?" c
-EDITOR=nano sudo -E visudo
+EDITOR=vim sudo -E visudo
 usermod -aG wheel $username
 
 # ------------------------------------------------------
