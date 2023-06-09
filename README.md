@@ -1,7 +1,9 @@
 # archinstall
 
 ## Load keyboard layout (replace de with us, fr, es if needed)
+```
 loadkeys de-latin1
+```
 
 ## Increase font size (optional)
 setfont ter-p20b
