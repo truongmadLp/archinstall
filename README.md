@@ -40,7 +40,9 @@ Write w, Confirm Y
 pacman -Syy
 ```
 ## Install git
+```
 pacman -S git
+```
 
 Maybe it's required to install the current archlinux keyring if the installation of git fails.
 ```
