@@ -29,9 +29,9 @@ lsblk
 cfdisk /dev/sda
 ```
 
-Partition 1: +512M ef00 (for EFI), 128M is enough for grub usually
-Partition 2: Available space 8300 (for Linux filesystem)
-(Optional Partition 3 for Virtual Machines)
+Partition 1: +512M ef00 (for EFI), 128M is enough for grub usually\
+Partition 2: Available space 8300 (for Linux filesystem)\
+(Optional Partition 3 for Virtual Machines)\
 Swap lowkey useless
 Write w, Confirm Y
 
