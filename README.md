@@ -29,11 +29,11 @@ lsblk
 cfdisk /dev/sda
 ```
 
-### Partition 1: +512M ef00 (for EFI), 128M is enough for grub usually
-### Partition 2: Available space 8300 (for Linux filesystem)
-### (Optional Partition 3 for Virtual Machines)
-### Swap lowkey useless
-### Write w, Confirm Y
+Partition 1: +512M ef00 (for EFI), 128M is enough for grub usually
+Partition 2: Available space 8300 (for Linux filesystem)
+(Optional Partition 3 for Virtual Machines)
+Swap lowkey useless
+Write w, Confirm Y
 
 ## Sync package
 ```
@@ -42,10 +42,11 @@ pacman -Syy
 ## Install git
 pacman -S git
 
-### Maybe it's required to install the current archlinux keyring
-### if the installation of git fails.
+Maybe it's required to install the current archlinux keyring if the installation of git fails.
+```
 pacman -S archlinux-keyring
 pacman -Syy
+```
 
 ## Clone Installation
 ```
