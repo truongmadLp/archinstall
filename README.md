@@ -45,3 +45,29 @@ chmod +x 1-install.sh 2-configuration.sh 3-yay.sh
 mount -o remount,size=1G /run/archiso/cowspace
 ## Start the script
 ./1-install.sh
+
+
+## Install yay
+./3-yay.sh
+
+## set keyboard layout to de in xorg
+localectl set-x11-keymap de
+
+## set keyboard layout to de in xorg (alternative)
+/etc/X11/xorg.conf.d/00-keyboard.conf
+
+Section "InputClass"
+        Identifier "keyboard"
+        MatchIsKeyboard "yes"
+        Option "XkbLayout" "de"
+        Option "XkbVariant" "nodeadkeys"
+EndSection
+
+## Install dwm, dmenu, st...
+git clone 
+cd dwm
+sudo make clean install
+
+## Add dwm to xinitrc
+echo "exec dwm" >> ~/.xinitrc #in home directory
+
