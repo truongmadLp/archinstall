@@ -89,7 +89,7 @@ systemctl enable lightdm            #Display manager
 # Grub installation
 # ------------------------------------------------------
 #grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
-grub-install /dev/sda
+grub-install /dev/nvme0n1p1
 grub-mkconfig -o /boot/grub/grub.cfg
 
 # ------------------------------------------------------
